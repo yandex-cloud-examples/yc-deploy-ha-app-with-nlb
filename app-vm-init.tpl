@@ -8,7 +8,7 @@ users:
   - name: ${ADMIN_NAME}
     sudo: ALL=(ALL) NOPASSWD:ALL
     shell: /bin/bash
-    ssh-authorized-keys:
+    ssh_authorized_keys:
       - "${ADMIN_SSH_KEY}"
 write_files:
 - path: /etc/nginx/nginx.conf
