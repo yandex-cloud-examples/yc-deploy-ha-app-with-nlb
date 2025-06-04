@@ -191,8 +191,8 @@
 
 10. Включить обратно прохождение проверок доступности со стороны NLB: 
     ```bash
-    sudo iptables -D INPUT -i eth0 -p tcp -s 198.18.235.0/24 --dport 80 -j REJECT
-    sudo iptables -D INPUT -i eth0  -p tcp -s 198.18.248.0/24 --dport 80 -j REJECT
+    sudo iptables -D INPUT -i eth0 -p tcp -s 198.18.235.0/24 --dport 80 -j ACCEPT
+    sudo iptables -D INPUT -i eth0  -p tcp -s 198.18.248.0/24 --dport 80 -j ACCEPT
     ```
 
 ## Удаление развертывания <a id="uninstall"/></a>
